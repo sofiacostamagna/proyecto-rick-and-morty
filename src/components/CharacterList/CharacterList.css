@@ -1,0 +1,100 @@
+/* src/components/CharacterList.css */
+.character-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centrado de las tarjetas */
+  margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+.character-controls {
+  display: flex;
+  justify-content: space-between; /* Alinea la búsqueda a la izquierda y los filtros a la derecha */
+  align-items: center; /* Alinea verticalmente ambos elementos */
+  background-color: rgba(255, 255, 255, 0.2); /* Fondo transparente */
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px; /* Bordes redondeados para el contenedor */
+}
+
+/* Ajustes para el input de búsqueda */
+.character-search {
+  flex: 1; /* Ocupa el espacio necesario */
+}
+
+/* Ajustes para los filtros */
+.character-filters {
+  flex: 1; /* Ocupa el espacio necesario */
+  display: flex;
+  justify-content: flex-end; /* Alinea los filtros a la derecha */
+}
+
+.character-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  background-color: white;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.character-card:hover {
+  transform: scale(1.05);
+}
+
+.character-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.character-card h3 {
+  color: #333;
+  margin-top: 10px; /* Ajustado para más espacio */
+  font-size: 18px; /* Aumentado para mayor legibilidad */
+}
+
+.btn-more {
+  background-color: #e36708; /* Color vibrante */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0; /* Espaciado entre el botón y la tarjeta */
+  font-size: 14px; /* Aumentado para mayor legibilidad */
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Añadido para efectos */
+}
+
+.btn-more:hover {
+  background-color: #e36708; /* Color más oscuro en hover */
+  transform: translateY(-2px); /* Efecto de levantamiento al pasar el ratón */
+}
+
+.btn-toggle-favorites {
+  margin-right: 60px;
+  background-color: #e36708; /* Verde brillante */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 100px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-toggle-favorites:hover {
+  background-color: #e67e22;
+}
+
+.btn-favorite {
+  background: none; /* Sin fondo */
+  border: none; /* Sin borde */
+  cursor: pointer; /* Cursor como puntero */
+  font-size: 24px;
+  margin-left: 30px;
+}

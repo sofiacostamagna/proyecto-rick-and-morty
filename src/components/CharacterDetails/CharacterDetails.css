@@ -1,0 +1,78 @@
+/* Contenedor principal con fondo */
+.character-detail-container {
+  min-height: calc(
+    100vh - 160px
+  ); /* Asegura que no se sobreponga con el header y footer */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor para organizar la imagen y la información */
+.character-detail-content {
+  display: flex;
+  height: 400px;
+  width: 600px;
+  justify-content: start;
+  align-items: start;
+  gap: 40px; /* Espacio entre la imagen y la información */
+  background-color: #02381c;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo para la imagen del personaje */
+.character-image {
+  width: 300px;
+  border-radius: 10px;
+}
+
+/* Estilo para la información del personaje */
+.character-info {
+  max-width: 300px;
+}
+
+.character-info h2 {
+  color: white;
+}
+
+.character-info p {
+  font-size: 16px;
+  color: rgb(184, 181, 181);
+  margin-bottom: 10px;
+}
+
+/* Estilos para el botón "Volver" */
+.btn-back {
+  background-color: #e36708; /* Verde brillante */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-back:hover {
+  background-color: #f49548; /* Color verde más claro en hover */
+}
+
+/* Ajustar la visibilidad del contenido por el header */
+.character-detail-container {
+  padding-top: 100px; /* Evitar que el header tape el contenido */
+}
+
+/* Asegura que el footer esté al final si hay poco contenido */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+}

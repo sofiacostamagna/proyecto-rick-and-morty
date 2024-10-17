@@ -1,0 +1,40 @@
+/* src/components/CharacterFilters.css */
+.character-filters {
+  display: flex;
+  flex-direction: wrap;
+  align-items: center;
+  margin-top: 100px;
+  margin-right: 60px;
+}
+
+select {
+  padding: 10px;
+  margin: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+  align-items: center;
+  display: center;
+}
+
+select:hover {
+  border-color: #e36708; /* Cambiar el borde al pasar el ratón */
+  box-shadow: 0 0 5px #e36708(0, 123, 255, 0.5);
+}
+
+.btn-filter {
+  background-color: #e36708; /* Color del botón similar al resto de la app */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-filter:hover {
+  background-color: #f49548; /* Color más oscuro al pasar el ratón */
+  transform: scale(1.05); /* Aumentar el tamaño un poco al pasar el ratón */
+}
